@@ -8,4 +8,4 @@
 + 感悟与心得
 + 其他
 
-请访问我的主页相互学习交流 [主页地址在这里](!https://amiing.github.io/blog/)
+请访问我的主页相互学习交流 [主页地址在这里](https://amiing.github.io/blog/)
