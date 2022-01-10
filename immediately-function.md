@@ -17,6 +17,7 @@ const funcA = function(){console.log('hello')}() //hello
 执行成功！
 
 > 有些情况下没有返回值，或者我们不关心返回值，那这个赋值操作就显得比较多余了，我们把它去掉试试
+
 ### 方式一：
 
 ```js
