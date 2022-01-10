@@ -30,13 +30,17 @@ function(){console.log('hello')}() // Uncaught SyntaxError: Function statements 
 ```js
 function foo(){console.log('hello')}() // Uncaught SyntaxError: Unexpected token ')'
 ```
+
 + 这种写法也是不行的，等价于：
+
 ```js
 function foo(){console.log('hello')}
 ()
 ```
+
 被解析成不相干的两部分。
 比如我们试着传参验证一下上面的说法：
+
 ```js
 function foo(){console.log('hello')}(1) // 1
 
