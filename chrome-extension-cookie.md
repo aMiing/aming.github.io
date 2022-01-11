@@ -15,7 +15,7 @@
 
 具体实现：
 
-1. 为扩展声明权限列表
+### 1、为扩展声明权限列表
 
 ```js
 // manifest.json
@@ -23,7 +23,7 @@
 
 ```
 
-2. popup 界面配置信息
+### 2、popup 界面配置信息
 
 ```js
 // manifest.json
@@ -34,15 +34,15 @@
 }
 ```
 
-[cookie 配置页面](/source/images/cookie.png)
+![cookie 配置页面](/source/images/cookie.png)
 
-3. 配置信息存储到 localstorage 中
+### 3、配置信息存储到 localstorage 中
 
 ```js
 localStorage.setItem("domainList", JSON.stringify(domainList));
 ```
 
-4. 监听 storage 变化，执行搬运
+### 4、监听 storage 变化，执行搬运
 
 ```js
 //background.js
@@ -100,7 +100,7 @@ const init = domainList => {
 };
 ```
 
-5. 监听 source 源 cookie 的变化，并更新 target 源的 cookie
+### 5、监听 source 源 cookie 的变化，并更新 target 源的 cookie
 
 ```js
 chrome.cookies.onChanged.addListener(function (changeInfo) {

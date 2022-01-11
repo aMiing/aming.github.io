@@ -30,7 +30,7 @@ function throttle(func, t) {
         container.onmousemove = throttle(getUserAction, 1000);
 
 ```
-[throttle效果](/source/gifs/throttle.gif)
+![throttle效果](/source/gifs/throttle.gif)
 
 ## 立即执行
 
