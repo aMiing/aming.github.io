@@ -36,16 +36,25 @@
             };
         }
 
+        function throttle(func, t) {
+            let timer = null;
+            return function () {
+                if (!timer) {
+                    func();
+                    timer = setTimeout(() => {
+                        timer = null;
+                    }, t);
+                }
+            };
+        }
+
         var count = 1;
         var container = document.getElementById('container');
-
         function getUserAction() {
-            // console.log('this', this);
             container.innerHTML = count++;
         };
-        // container.onmousemove = getUserAction;
 
-        container.onmousemove = debounce(getUserAction, 1000, true);
+        container.onmousemove = throttle(getUserAction, 1000, true);
 
 
     </script>
